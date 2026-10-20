@@ -5,6 +5,7 @@ Protocol from andrewrabert/python-pulsar-mouse-tool, which also backs the
 
   * 3554:f508  Pulsar X2 V2 Mini (1 kHz dongle)      3554:f507  the same mouse on the cable
   * 3554:f58f  ATK VXE R1 SE+ (wired)                373b:1085  ATK VXE R1 SE+ (2.4 GHz)
+  * 373b:11b6  ATK A9 Ultimate (wired)               373b:11d9  ATK A9 Ultimate (2.4 GHz dongle)
   * 3554:f58a  VXE R1 Pro Max (1 kHz dongle, #87)    3554:f58c  the same mouse on its cable
   * 3710:5406  Pulsar X2 CrazyLight Mini (2.4 GHz)   3710:3414  the same mouse on the cable
   * the Kysona M600 and the VXE Dragonfly R1 Pro use the same protocol (their ids are
@@ -162,6 +163,8 @@ PIDS: Dict[int, Dict[int, str]] = {
     },
     0x373B: {
         0x1085: "ATK VXE R1 SE+ (2.4 GHz)",
+        0x11B6: "ATK A9 Ultimate (USB cable)",
+        0x11D9: "ATK A9 Ultimate (2.4 GHz dongle)",
     },
     0x3770: {
         0x0200: "Hitscan Hyperlight (2.4 GHz)",
